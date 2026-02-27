@@ -1,47 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Note</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;600;800&family=Epilogue:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/onedark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
-<script src="notes.config.js"></script>
-<link rel="stylesheet" href="note.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <script src="notes.config.js"></script>
+    <link rel="stylesheet" href="note.css" />
+  </head>
+  <body>
+    <div id="progress"></div>
 
-<div id="progress"></div>
+    <nav>
+      <a href="index.html" class="back-btn">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Home
+      </a>
+      <span class="nav-sep">/</span>
+      <span id="navSubject" class="nav-pill" style="margin-left: 0"></span>
+      <span class="nav-sep">/</span>
+      <span
+        id="navTopic"
+        style="
+          font-size: 13px;
+          color: var(--text2);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 120px;
+        "
+      ></span>
+      <span class="nav-sep">/</span>
+      <span class="nav-title" id="navTitle">Loading…</span>
+    </nav>
 
-<nav>
-  <a href="index.html" class="back-btn">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
-    Home
-  </a>
-  <div class="nav-breadcrumb">
-    <span>Notes</span>
-    <span>›</span>
-    <strong id="nav-title">Loading…</strong>
-  </div>
-  <div id="nav-pill" class="nav-subject-pill"></div>
-</nav>
-
-<div class="layout">
-  <aside class="toc-sidebar" id="tocSidebar">
-    <span class="toc-label">Contents</span>
-    <ul class="toc-list" id="tocList"></ul>
-  </aside>
-
-  <main class="main">
-    <div id="noteContent">
-      <div class="loading"><div class="spinner"></div> Loading note…</div>
+    <div class="layout">
+      <aside class="toc-sidebar" id="tocSidebar">
+        <span class="toc-heading">On this page</span>
+        <ul class="toc-list" id="tocList"></ul>
+      </aside>
+      <main class="main">
+        <div id="noteContent">
+          <div class="state-center">
+            <div class="spinner"></div>
+            <span>Loading…</span>
+          </div>
+        </div>
+      </main>
     </div>
-  </main>
-</div>
 
-<script src="note.js"></script>
-</body>
+    <script src="note.js"></script>
+  </body>
 </html>

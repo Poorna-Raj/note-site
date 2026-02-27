@@ -1,43 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CS Notes</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;600;800&family=Epilogue:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="notes.config.js"></script>
-<link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="notes.config.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <span class="logo-dot"></span>Tangent
+      </a>
+      <div class="nav-search">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search notes…"
+          oninput="handleSearch(this.value)"
+        />
+      </div>
+    </nav>
 
-<nav>
-  <a href="index.html" class="nav-brand">
-    <span class="nav-brand-dot"></span>
-    CS Notes
-  </a>
-  <div class="nav-search">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="searchInput" placeholder="Search notes…" oninput="handleSearch(this.value)">
-  </div>
-</nav>
+    <div class="hero">
+      <div class="hero-eyebrow">Personal reference</div>
+      <h1>Study Notes</h1>
+      <p>Database, DevOps, programming — all in one place.</p>
+      <div class="hero-stats" id="stats"></div>
+    </div>
 
-<div class="hero">
-  <div class="hero-label">
-    <span>●</span> Computer Science
-  </div>
-  <h1>My <span>CS</span><br>Notes</h1>
-  <p class="hero-sub">Personal reference notes on databases, programming languages, and CS theory.</p>
-  <div class="stats" id="stats"></div>
-</div>
+    <div class="content" id="mainContent">
+      <aside class="subject-nav" id="subjectNav">
+        <span class="snav-label">Subjects</span>
+      </aside>
+      <div class="notes-panel" id="notesPanel"></div>
+      <div id="no-results">No notes match your search.</div>
+    </div>
 
-<div class="section" id="subjects-container"></div>
-<div id="no-results">No notes match your search.</div>
+    <footer>
+      Edit <code>notes.config.js</code> to add notes &nbsp;·&nbsp; Drop
+      <code>.md</code> files in <code>notes/</code>
+    </footer>
 
-<footer>
-  Edit <code>notes.config.js</code> to add notes &nbsp;·&nbsp; Drop <code>.md</code> files in <code>notes/</code>
-</footer>
-
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
