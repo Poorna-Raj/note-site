@@ -2,12 +2,21 @@
 
 ## Lexical Units in a PL/SQL Block
 
-- Lexical units are the building blocks of any PL/SQL block.
-- They are sequence of characters which can be classified into,
-  - Identifiers: `v_name`, `v_email`
-  - [Delimiters](#delimiters): `+`, `:=`
-  - Literals: `Tom`, `1270`, `True`
-  - Comments: `--`, `/* */`
+Lexical units are the basic building blocks of any PL/SQL block.
+
+They are sequences of characters classified into the following categories:
+
+- Identifiers – Names given to variables, constants, procedures, etc.
+  - Examples: `v_name`, `v_email`
+
+- Delimiters – Symbols that have special meaning in PL/SQL
+  - Examples: `+`, `:=`
+
+- Literals – Fixed values used in statements
+  - Examples: `'Tom'`, `1270`, `TRUE`
+
+- Comments – Used to document code
+  - Examples: `--`, `/* */`
 
 ### Delimiters
 
@@ -43,7 +52,7 @@
   - Single-row functions
   - Data type conversion functions
   - Character functions
-- But there are functions like group function which are available in SQL statements can be used only in SQL statements.
+- However, some SQL functions (such as group functions) can only be used inside SQL statements and not directly in procedural expressions.
 
 > Example: Get length of a string
 
@@ -78,7 +87,7 @@ END;
 
 ### Implicit Conversions
 
-- These are conversions done by the PL/SQL engine, in situations where there are mixed data types in a statement.
+- Implicit conversions are automatically performed by the PL/SQL engine when mixed data types appear in an expression.
 
 Example:
 
@@ -101,8 +110,8 @@ When executing this block the engine automatically convert the `v_sal_bonus` int
 
 ### Explicit Conversions
 
-- These are the conversions done manually by the user to convert one data type into another.
-- The PL/SQL provides functions to perform these operations such as,
+- Explicit conversions are performed manually using conversion functions provided by PL/SQL.
+- Common conversion functions include:
   - `TO_DATE` - Char value to Date
   - `TO_NUMBER` - Char value to Number
 
@@ -134,14 +143,19 @@ Number as number: 7500
 
 ## Nested Blocks and Variable Scope
 
-- PL/SQL blocks can be nested whenever an executable statement is allowed.
-- An exception section can contain nested blocks.
+- PL/SQL blocks can be nested inside other blocks.
 
-![image of the plsql variable scope](assets/variable_scope.png)
+- A nested block can appear anywhere an executable statement is allowed.
+
+- Even the EXCEPTION section can contain nested blocks.
+
+- Variables declared in an outer block are accessible to inner blocks (depending on scope rules).
+
+![image of the plsql variable scope](./assets/variable_scope.png)
 
 ## SQL Statements in PL/SQL
 
-- The usual SQL statements can be executed in the statement section.
+- Standard SQL statements can be written inside the executable section of a PL/SQL block.
 
 ### SELECT Statements in PL/SQL
 
