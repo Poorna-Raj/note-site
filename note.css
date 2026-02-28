@@ -470,6 +470,16 @@ nav {
   border-radius: 50%;
   animation: spin 0.65s linear infinite;
 }
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border2);
+  display: block;
+  margin: 20px 0;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
