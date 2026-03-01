@@ -79,6 +79,15 @@ const NOTES = [
     tags: ["Linux", "CLI", "Bash"],
     updated: "2026-03-01",
   },
+  {
+    title: "Visual Editor",
+    subject: "devops",
+    topic: "Linux Basics",
+    file: "notes/devops/linux-basics/visual_editor.md",
+    desc: "File Editing, Text Editor",
+    tags: ["Linux", "CLI", "Bash"],
+    updated: "2026-03-01",
+  },
   // {
   //   title:   "File Permissions",
   //   subject: "devops",
