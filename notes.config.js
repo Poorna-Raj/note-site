@@ -49,6 +49,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-02-28",
   },
+  {
+    title: "Data Manipulation",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/data_manipulation.md",
+    desc: "DML, DCL, DDL, Subqueries, Group Functions",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-02",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
