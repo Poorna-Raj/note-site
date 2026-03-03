@@ -76,6 +76,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-03",
   },
+  {
+    title: "Loop Statements",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/loop_statements.md",
+    desc: "FOR,WHILE,LOOP,CONTINUE,GOTO",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-03",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
