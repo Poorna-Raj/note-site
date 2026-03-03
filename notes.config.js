@@ -58,6 +58,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-02",
   },
+  {
+    title: "Joins in Oracle",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/joins.md",
+    desc: "Joins",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-03",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
