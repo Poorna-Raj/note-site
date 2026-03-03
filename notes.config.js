@@ -67,6 +67,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-03",
   },
+  {
+    title: "Conditional Statements",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/conditional_statements.md",
+    desc: "IF,ELSEIF,ELSE,CASE,",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-03",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
