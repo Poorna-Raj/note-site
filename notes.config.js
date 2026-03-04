@@ -85,6 +85,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-03",
   },
+  {
+    title: "Cursors",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/explicit_cursors.md",
+    desc: "CURSORS,LOCKS,IMPLICIT,EXPLICIT",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-04",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
