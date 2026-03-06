@@ -112,6 +112,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-06",
   },
+  {
+    title: "Functions",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/functions.md",
+    desc: "Functions,Returns",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-06",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
