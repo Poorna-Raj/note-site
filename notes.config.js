@@ -103,6 +103,15 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-05",
   },
+  {
+    title: "Stored Procedures",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/stored_procedure.md",
+    desc: "IN,OUT,IN OUT",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-06",
+  },
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
