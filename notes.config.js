@@ -121,6 +121,34 @@ const NOTES = [
     tags: ["Oracle", "PL/SQL"],
     updated: "2026-03-06",
   },
+  {
+    title: "User Management",
+    subject: "database",
+    topic: "PL/SQL",
+    file: "notes/database/plsql/user_management.md",
+    desc: "Grant,Users,Privileges",
+    tags: ["Oracle", "PL/SQL"],
+    updated: "2026-03-13",
+  },
+  {
+    title: "Introduction",
+    subject: "database",
+    topic: "NOSQL",
+    file: "notes/database/nosql/introduction.md",
+    desc: "NOSQL,MongoDB",
+    tags: ["NOSQL", "MongoDB"],
+    updated: "2026-03-13",
+  },
+  {
+    title: "MongoDB",
+    subject: "database",
+    topic: "NOSQL",
+    file: "notes/database/nosql/mongo_db.md",
+    desc: "NOSQL,MongoDB",
+    tags: ["Query", "MongoDB"],
+    updated: "2026-03-13",
+  },
+
   // Add more PL/SQL notes here — same subject + topic = same group:
   // {
   //   title:   "Cursors",
